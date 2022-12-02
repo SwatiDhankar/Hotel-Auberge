@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Auberge Hotel">
+  <meta name="description" content="This is a website for a luxury hotel named Auberge">
+  <meta name="keywords" content="Hotel,Luxury Hotel,Rooms">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="1 days">
+  <meta name="author" content="Swati">
+  <title>Auberge</title>
+
+  <!-- Stylesheet link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Javascript file link -->
+  <script src="index.js" type="text/javascript"></script>
+
+  <!-- Bootstrap links -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- Font awesome CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Font Poppons link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light"
+    style="position: fixed; z-index:100; width: 100%; background-color: aliceblue;">
+    <a class="navbar-brand" href="#">
+      <h2><b>Auberge</b></h2>
+      <h6>Luxury Hotel</h6>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mx-auto">
+        <a class="nav-item nav-link active" href="index.html">Overview<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link active" href="gallary.html">Gallary</a>
+        <a class="nav-item nav-link active" href="rooms.html">Rooms</a>
+        <a class="nav-item nav-link active" href="dining.html">Dining</a>
+        <a class="nav-item nav-link active" href="#review">Reviews</a>
+        <li class="dropdown">
+          <a class="nav-item nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Contact Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+            style="background-color: aliceblue; border:2px solid#17a2b8; padding: 10px; box-shadow:3px 3px #17a2b8;">
+            <a class="dropdown-item" href="#"><i class="fa-solid fa-phone"></i> Call Us: +91xxxxxxxxxx</a>
+            <a class="dropdown-item" href="https://mail.google.com"><i class="fa-solid fa-envelope"></i> Email: Auberge@gmail.com</a>
+          </div>
+        </li>
+      </div>
+      <div>
+        <a href="nav-item nav-link active"><button type="button" class="btn btn-info nav_button">Book Now</button></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- banner -->
+  <div class="banner_carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 hotel_banner_image" src="images/banner1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 hotel_banner_image" src="images/banner2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 hotel_banner_image" src="images/banner3.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- About Us -->
+  <div class="about_us container mt-5 text-center">
+    <h1 class="phrase">Experience something new every moment!</h1>
+    <div class="line mb-3"></div>
+    <div class="description">
+      <p>Here at hotel Auberge, we allow an easy, simple and intelligent planning and booking process, Fast, easy,
+        discreet Checkin & Checkout. The room offered is exact what a guest wanted (in terms of category,
+        classification, physical location in the hotel, bed size).<span id="dots">...</span>
+        <span id="more">Amazing services: Guests get the feeling that they are known and valued. The staff
+          know them by name, are friendly (smiling!) and respectful. Housekeeping and gardeners are quiet and do not
+          interfere with a guest's enjoyment of the property, maintenance personnel always appear at guests room within
+          minutes etc.</span>
+      </p>
+      <button class="btn btn-info" onclick="read()" id="link">Read more</button>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="our_services mt-5 text-center">
+    <div id="image">
+      <h2 class="services_text">Services</h2>
+      <div class="services container d-block">
+        <div class="row mt-5">
+          <div class="col-md-5 service_box">
+            <h3>Dining/Food Service</h3>
+            <p>We provide dining and food service available 24/7 for our guests.A big spaceous dining hall that takes
+              care of guest's comfort and we also follow hygiene protocol and give guests a safe space to enjoy
+              themselves. </p>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-5 service_box">
+            <h3>Housekeeping</h3>
+            <p>We provide a great housekeeping that keeps rooms clean and is welcoming.All of our housekeeping
+              staff is very polite, hospitable and always ready to help our guests at anytime. We are more than happy to
+              help.</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-5 service_box">
+            <h3>A Working Space</h3>
+            <p>We understand that a lot of people work as freelancers, and many are working virtually. Working from
+              home, manage a presentation, or conduct a call at any time that's why we provide a working space for our
+              guests.</p>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-5 service_box">
+            <h3> Free Books & Movies</h3>
+            <p>We understand everyone and their needs that's why we provide a reading space and promote movie
+              sessions for our guests. Our guests deserve a luxury
+              Experience at our service and we provide that.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rooms and Suits -->
+  <div class="rooms container mt-5 text-center">
+    <h1>Rooms & Suits</h1>
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="guest_room">
+          <img class="suits" src="images/room1.jpg" alt="Room 1 image">
+          <h5>Deluxe Rooms</h5>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="guest_room">
+          <img class="suits" src="images/room2.jpg" alt="Room 2 image">
+          <h5>Standard Rooms</h5>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="guest_room">
+          <img class="suits" src="images/room3.jpg" alt="Room 3 image">
+          <h5>Suits</h5>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-info mt-5"><a href="rooms.html" style="color: white; text-decoration:none">
+        Explore More</a></button>
+  </div>
+
+  <!-- Dining -->
+  <div class="dining text-center">
+    <h1 class="dining_text">Dining</h1>
+    <div id="carouselExampleIndicators" class="carousel slide mt-5" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="dining_image" src="./images/Dining1.jpg" alt="">
+            </div>
+            <div class="col-md-6">
+              <p class="dining_sub_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure repudiandae
+                optio voluptas quaerat asperiores quasi illum accusamus voluptatem nobis, eligendi enim mollitia! Cum
+                voluptatibus quia, labore distinctio ad doloremque? Debitis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, odit minima! Perspiciatis sed provident,
+                aspernatur eum distinctio totam inventore.
+                Deleniti laborum sit error assumenda temporibus? Eius dolores dolorum, odit nostrum placeat, dolorem
+                vel, ipsam earum tempore totam voluptate? Odit sequi error, eveniet blanditiis repudiandae non aliquid
+                dicta earum amet.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="dining_image" src="./images/Dining2.jpg" alt="">
+            </div>
+            <div class="col-md-6">
+              <p class="dining_sub_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure repudiandae
+                optio voluptas quaerat asperiores quasi illum accusamus voluptatem nobis, eligendi enim mollitia! Cum
+                voluptatibus quia, labore distinctio ad doloremque? Debitis. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Fugit neque recusandae quasi mollitia modi, repellat voluptate commodi? Error iste
+                ducimus, necessitatibus ipsam accusantium hic recusandae pariatur dolore, officiis quidem itaque!</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="dining_image" src="./images/Dining3.jpg" alt="">
+            </div>
+            <div class="col-md-6">
+              <p class="dining_sub_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure repudiandae
+                optio voluptas quaerat asperiores quasi illum accusamus voluptatem nobis, eligendi enim mollitia! Cum
+                voluptatibus quia, labore distinctio ad doloremque? Debitis. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Modi quisquam nihil tempora tenetur! Dolor dolore voluptas eos ullam consectetur
+                inventore rem eum autem a? Voluptas maxime explicabo voluptatum ab quisquam?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Fixed Image -->
+  <div class="hotel_image">
+  </div>
+
+  <!-- Review -->
+  <div id="review" class="review container mt-5 text-center">
+    <h1>Our Guests Reviews</h1>
+    <div class="row mt-5 d-flex justify-content-center align-items-center">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem; background-color: aliceblue; border:2px #17a2b8 solid;
+        border-radius: 10px;">
+          <div class="card-body">
+            <div class="card-title">
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="images/Review2.jpg" class="review_image" alt="Picture of the person writing this review">
+                </div>
+                <div class="col-md-10">
+                  <h3>Ashley Graham</h3>
+                </div>
+              </div>
+            </div>
+            <q class="card-text">Totally loved it! I spent 2 weeks in this hotel with my friends and we loved it. This
+              hotel is really good the interior, the cleanliness, hotel services everything was great and I'm
+              sattisfied with my experience.</q>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem; background-color: aliceblue; border:2px #17a2b8 solid;
+        border-radius: 10px;">
+          <div class="card-body">
+            <div class="card-title">
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="images/Review1.jfif" class="review_image" alt="Picture of the person writing this review">
+                </div>
+                <div class="col-md-10">
+                  <h3>Harrison Davis</h3>
+                </div>
+              </div>
+            </div>
+            <q>It was a great experience staying at Hotel Auberge where all the staff is very polite,helpful and
+              hospitable. We spent 5 days in this hotel and we were able to
+              enjoy our vaccations peacefully thanks to Hotel Auberge.</q>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem; background-color: aliceblue; border:2px #17a2b8 solid;
+        border-radius: 10px;">
+          <div class="card-body">
+            <div class="card-title">
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="images/Review3.jpg" class="review_image" alt="Picture of the person writing this review">
+                </div>
+                <div class="col-md-10">
+                  <h3>Candice Flinn</h3>
+                </div>
+              </div>
+            </div>
+            <q>I liked it very much, I would totally recommend it to my friends and family. The rooms were clean and the
+              food was amazing. I am very impressed by the services of this hotel, very efficient and top-notch.</q>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer_content container">
+      <h1>Hotel Auberge</h1>
+      <div class="row mt-3">
+        <div class="col-md-3">
+          <a href="" class="footer_link">
+            <ul>
+              <li>Overview</li>
+              <li>Gallary</li>
+              <li>Rooms</li>
+              <li>Dining</li>
+              <li>Review</li>
+              <li>Contact Us</li>
+            </ul>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <h3>Follow Us</h3>
+          <p>On Our Social Media</p>
+          <i class="fa-brands fa-twitter fa-2x footer_icon"></i>
+          <i class="fa-brands fa-instagram fa-2x footer_icon"></i>
+          <i class="fa-brands fa-facebook fa-2x footer_icon"></i>
+          <i class="fa-brands fa-youtube fa-2x footer_icon"></i>
+        </div>
+        <div class="col-md-5 mt-2">
+          <h3>Subscribe to Our Newsletter</h3>
+          <p>Subscribe to our news letter for updates about offers and events.</p>
+          <div class="newsletter_form">
+            <form onsubmit="return validation()" name="form">
+              <label for="">Email:</label>
+              <input type="email" class="form-control" name="email" id="email"
+                placeholder="Please enter you Email here...">
+                <span id="email_address" class="danger"></span>
+            </form>
+            <button type="submit" class="btn btn-info mt-3" onclick="validation()">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

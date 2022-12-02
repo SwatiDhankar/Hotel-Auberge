@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+/* navbar */
+.navbar .navbar-collapse .navbar-nav .nav-item{
+    padding-left: 40px;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item:hover{
+    font-size: 18px;
+    color: #17a2b8;
+    font-weight: bold;
+}
+
+/* banner */
+.hotel_banner_image{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* about us */
+.about_us{
+    background-color: rgb(175, 204, 201);
+    padding: 60px;
+}
+
+.phrase{
+    padding: 30px;
+}
+
+.line{
+    height: 5px;
+    width: 50%;
+    background-color:#17a2b8;
+    margin-left: 25%;
+}
+
+#more{
+    display: none;
+}
+
+.description{
+    padding: 10px 200px;
+}
+
+/* services */
+.our_services{
+    background-image: url(images/service.jpg);
+    height: 100%;
+    max-width: 100%;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+#image{
+    height: 100vh;
+    width: 100%;
+    position: center;
+    background:rgba(0,0,0,0.3);
+}
+
+.services_text{
+    color:rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 50px;
+    font-weight:600;
+}
+
+.service_box{
+    background: rgb(249, 248, 248);
+    opacity: 0.7;
+    height: 200px;
+    max-width: 100%;
+    background-size: cover;
+    padding: 30px;
+}
+
+.service_box:hover{
+    opacity: 1;
+    border: 2px solid #17a2b8;
+    box-shadow: 5px 5px 5px 5px #17a2b8;
+}
+
+/* rooms */
+.suits{
+    height: 200px;
+    width: 90%;
+    background-size: cover;
+    border:4px #17a2b8 double;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.guest_room:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition:ease-in-out;
+}
+
+/* Dining */
+.dining_image{
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+}
+
+.dining{
+    background-color: rgb(175, 204, 201);
+    padding: 20px;
+    margin: 100px 0px 100px 0px;
+}
+
+.dining_text{
+    font-weight: Bold;
+}
+
+.dining_sub_text{
+    padding: 16%;
+}
+
+/* Reviews */
+
+.review_image{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 1px solid rgb(100, 166, 177);
+}
+
+.card{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/* fixed image*/
+.hotel_image{
+    background-image: url(./images/fixed\ \(2\).jpg);
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* footer */
+.footer{
+    background-color:rgb(175, 204, 201);
+    height: auto;
+    width: 100%;
+    padding: 50px;
+    margin-top: 10%;
+}
+
+.footer_link li{
+    color: black;
+    padding: 5px;
+}
+
+.footer_icon{
+    padding: 5px;
+}
+
+@media only screen and (max-width: 991px){
+    .hotel_banner_image{
+        height: 50vh;
+    }
+    .description{
+        padding: 10px 20px;
+    }
+    .service_box{
+        font-size: 10px;
+    }
+    .our_services{
+        height: auto;
+    }
+    #image{
+        height: auto;
+    }
+    .box{
+        font-size: 12px;
+    }
+    .nav_button{
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .dining_image{
+        height: 300px;
+        width: 100%;
+    }
+    .dining_sub_text{
+        font-size: 12px;
+    }
+    .hotel_image{
+        height: 30vh;
+    }
+    .card{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Gallary */
+/* Gallary */
+
+div>h4::before , h1::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  div>h4:hover::before , h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  div>h4::before , h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #3db6c9;
+    z-index: -1;
+    transition: transform .5s ease;
+  }
+  
+  div>h4 , h1 {
+    position: relative;
+    padding: 10px;
+    display: block;
+    margin-top: 8%;
+  }
+  
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
+
+
+
+/* Image Model */
+.gallary_image {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 35vh;
+    width: 23vw;
+}
+
+.gallary_image:hover {
+    opacity: 0.5;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    height: 80vh;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    background-color: rgb(145, 142, 142);
+    padding: 5px 10px;
+    border-radius: 50%;
+    color: #faf8f8;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(250, 5, 5);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .gallary_image{
+        height: 20vh;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .gallary_image{
+        height: 15vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Rooms */
+/* Rooms */
+
+.card-img-top{
+    height: 200px;
+    width:250px;
+}
+
+.room_carousel{
+    background-color:rgb(175, 204, 201); 
+    padding: 20px; 
+    border-radius: 10px;
+}
+
+.vip_row{
+    background-color: rgb(175, 204, 201);
+    border-radius: 20px;
+}
+
+.vip_image{
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 991px){
+    .vip_image{
+        height: 40vh;
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+/* Dining */
+/* Dining */
+
+.dining_banner{
+    background-image: url(./images/Dining3.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  
+}
+
+.dining_row{
+    background-color: rgb(175, 204, 201);
+    border-radius: 20px;
+}
+
+.dining_area_image{
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+
+
+
