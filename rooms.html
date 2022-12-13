@@ -38,7 +38,7 @@
     <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light"
   style="position: fixed; z-index:100; width: 100%; background-color: aliceblue;">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="index.html">
     <h2><b>Auberge</b></h2>
     <h6>Luxury Hotel</h6>
   </a>
@@ -64,14 +64,55 @@
       </li>
     </div>
     <div>
-      <a href="nav-item nav-link active"><button type="button" class="btn btn-info nav_button">Book Now</button></a>
+      <button type="button" class="btn btn-info nav_button mt-1" id="myBtn">Book Now</button>
     </div>
   </div>
 </nav>
 
-<div>
-  <br><br><br><br><br><br>
-</div>
+<!-- The Modal -->
+<div id="myModal" class="modal-box">
+
+    <!-- Modal content -->
+    <div class="modal-box-content">
+      <div class="book container">
+        <span class="close-box">&times;</span>
+        <h2 class="text-center" style="text-decoration: #3db6c9 underline ;">Reservation Form</h2>
+        <form class="form">
+          <div class="check d-flex justify-content-center">
+            <div class="form-item">
+              <label for="checkin-date">Check In Date: </label>
+              <input type="date" id="chekin-date" class="form-control">
+            </div>
+            <div class="form-item">
+              <label for="checkout-date">Check Out Date: </label>
+              <input type="date" id="chekout-date" class="form-control">
+            </div>
+          </div>
+          <div class="quantity d-flex justify-content-center">
+            <div class="form-item">
+              <label for="adult">Adults: </label>
+              <input type="number" min="1" value="1" id="adult" class="form-control">
+            </div>
+            <div class="form-item">
+              <label for="children">Children: </label>
+              <input type="number" min="1" value="1" id="children" class="form-control">
+            </div>
+            <div class="form-item">
+              <label for="rooms">Rooms: </label>
+              <input type="number" min="1" value="1" id="rooms" class="form-control">
+            </div>
+          </div>
+          <div class="form-item text-center">
+            <input type="submit" class="btn btn-info" value="Book Now">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <br><br><br><br><br><br>
+  </div>
 
 <!-- Page Title -->
 <div class="text-center">
@@ -545,7 +586,7 @@
   <div>
     <div class="row vip_row">
       <div class="col-md-6">
-        <img class="vip_image" src="images/vipsuit1.jpg" alt="VIP Suit">
+        <img id="transit1" class="vip_image" src="images/vipsuit1.jpg" alt="VIP Suit">
       </div>
       <div class="col-md-6 vip_text">
         <h4 style="text-decoration:#17a2b8 underline ;">VIP Suit 1</h4>
@@ -556,7 +597,7 @@
         <p>24/7 Room Service</p>
         <p>TV Available</p>
         <p>Living Room</p>
-        <a href="#" class="btn btn-info">Book Now</a>
+        <a href="#" class="btn btn-info mb-3">Book Now</a>
       </div>
     </div>
   </div>
@@ -571,10 +612,10 @@
         <p>24/7 Room Service</p>
         <p>TV Available</p>
         <p>Living Room</p>
-        <a href="#" class="btn btn-info">Book Now</a>
+        <a href="#" class="btn btn-info mb-3">Book Now</a>
       </div>
       <div class="col-md-6">
-        <img class="vip_image" src="images/vipsuit2.jpg" alt="VIP Suit">
+        <img id="transit2" class="vip_image" src="images/vipsuit2.jpg" alt="VIP Suit">
       </div>
     </div>
   </div>
@@ -583,7 +624,7 @@
 <!-- Footer -->
 <footer class="footer">
   <div class="footer_content container">
-      <h1>Hotel Auberge</h1>
+      <h2 class="footer_text">Hotel Auberge</h2>
       <div class="row mt-3">
           <div class="col-md-3">
               <a href="" class="footer_link">
@@ -600,10 +641,10 @@
           <div class="col-md-3">
               <h3>Follow Us</h3>
               <p>On Our Social Media</p>
-              <i class="fa-brands fa-twitter fa-2x footer_icon"></i>
-              <i class="fa-brands fa-instagram fa-2x footer_icon"></i>
-              <i class="fa-brands fa-facebook fa-2x footer_icon"></i>
-              <i class="fa-brands fa-youtube fa-2x footer_icon"></i>
+              <a href="https://twitter.com/" style="color:rgb(29, 161, 242);"><i class="fa-brands fa-twitter fa-2x footer_icon"></i></a>
+              <a href="https://www.instagram.com/" style="color: rgb(230, 72, 161);"><i class="fa-brands fa-instagram fa-2x footer_icon"></i></a>
+              <a href="https://www.facebook.com/" style="color: rgba(66, 103, 178);"><i class="fa-brands fa-facebook fa-2x footer_icon"></i></a>
+              <a href="https://www.youtube.com/" style="color: red;"><i class="fa-brands fa-youtube fa-2x footer_icon"></i></a>
           </div>
           <div class="col-md-5">
               <h3>Subscribe to Our Newsletter</h3>
@@ -619,6 +660,36 @@
       </div>
   </div>
 </footer>
+
+ <!-- Box Modal script -->
+ <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close-box")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
 
 </body>
 </html>

@@ -16,19 +16,4 @@ function read() {
     }
   }
 
-
-// form validation //
-
-// subscribe form
-
-function validation() {
-  var email = document.getElementById('email').value;
-
-  if (email == "") {
-    document.getElementById('email_address').innerHTML = 'This should not be empty!';
-    return false;
-}
-else{
-  document.getElementById('email_address').innerHTML = 'Subscribed';
-}
-};
+  
