@@ -127,17 +127,57 @@
 
 /* Reviews */
 
-.review_image{
+.review_image {
     height: 60px;
     width: 60px;
     border-radius: 100%;
     border: 1px solid rgb(100, 166, 177);
-}
+  }
 
-.card{
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
+  .review_box {
+    height: 72vh;
+    padding: 0.5rem 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .review_list {
+    align-items: stretch;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: 1rem;
+    -webkit-animation-name: bdBestCarousel;
+    animation-name: bdBestCarousel;
+  }
+
+  .figure{
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 40px;
+    transition-duration: 85ms;
+    transition-property: box-shadow, transform;
+
+  }
+
+  .figure:hover {
+    box-shadow: 0 1em 1em rgba(0, 0, 0, .1);
+    transform: translateY(-.1em);
+  }
+
+  .review_list:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+
+  @keyframes bdBestCarousel {
+    100% {
+      transform: translateX(-500vh);
+    }
+  }
 
 /* fixed image*/
 .hotel_image{
@@ -403,9 +443,6 @@ div>h4::before , h1::before {
 
 
 
-
-
-
 /* Rooms */
 /* Rooms */
 
@@ -526,14 +563,16 @@ div>h4::before , h1::before {
 }
 
 .quantity .form-item {
+    margin-top: 10px;
     width: 28vh;
-    margin: 20px;
+    margin-right: 42px;
 }
 
 input {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .btn {
